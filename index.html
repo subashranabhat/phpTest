@@ -1,0 +1,55 @@
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script>
+		$(document).ready( function(){
+			document.getElementById('submitNowButton').onclick = function() {
+				
+			   var ourSelectedValues = [];
+				
+				var val1 = ourSelectedValues.push( $('input[name="ans1"]:checked').val() );
+				var val2 = ourSelectedValues.push( $('input[name="ans2"]:checked').val() );
+								
+				var temp = ourSelectedValues.toString();
+
+				 alert("you have x values  " + temp);
+				
+			} //inner getElementById close
+		});  
+
+	</script>
+	
+	
+		
+</head>
+
+	
+<title> our quiz</title>
+	
+<body>
+<form>	
+	<div>
+	   <p>What is your address ? </p>
+		<input type="radio" id="answers" value="w" name="ans1"/><label> Texas</label>
+		<input type="radio" id="answers" value="x" name="ans1"/><label> Louisiana</label>
+		<input type="radio" id="answers" value="y" name="ans1"/><label> California</label>
+		<input type="radio" id="answers" value="z" name="ans1"/><label> NewYork</label> 
+		<br><br>
+	 </div>
+
+	<div>
+		<p >What is your name ? </p>
+		<input type="radio" id="answers" value="ranjan" name="ans2"/><label> ranjan</label>
+		<input type="radio" id="answers" value="sushil" name="ans2"/><label> sushil</label>
+		<input type="radio" id="answers" value="sundar" name="ans2"/><label> sundar</label>
+		<input type="radio" id="answers" value="suresh" name="ans2"/><label> suresh</label>
+		<br><br>
+	</div>
+	
+	
+	<input type="button" value="submit" id="submitNowButton"> 
+</form> 
+	
+</body>
+</html>
